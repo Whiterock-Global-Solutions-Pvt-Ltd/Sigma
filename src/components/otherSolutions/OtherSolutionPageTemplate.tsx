@@ -20,7 +20,12 @@ type OtherSolutionPageTemplateProps = {
 export default function OtherSolutionPageTemplate({ solution }: OtherSolutionPageTemplateProps) {
   return (
     <>
-      <PageHero eyebrow="Other Solutions" title={solution.heroTitle} description={solution.heroDescription}>
+      <PageHero
+        eyebrow={solution.name}
+        title={solution.heroTitle}
+        description={solution.heroDescription}
+        image={solution.image}
+      >
         <div className="flex w-full flex-row gap-2.5 sm:w-auto sm:gap-3">
           <CheckEligibilityButton
             size="lg"

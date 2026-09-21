@@ -24,16 +24,16 @@ export default function FundingSolutionPageTemplate({ solution }: FundingSolutio
     { label: "Decision", value: solution.decision },
   ];
 
-  const visual = solution.heroGif ? (
-    <div className="relative flex h-48 w-48 items-center justify-center sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80">
+  const gifVisual = solution.heroGif ? (
+    <div className="relative mx-auto flex h-36 w-36 shrink-0 items-center justify-center sm:h-44 sm:w-44 lg:mx-0">
       <div
-        className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-transparent blur-2xl"
+        className="absolute inset-0 rounded-full bg-primary-50 blur-2xl"
         aria-hidden
       />
       <img
         src={solution.heroGif}
         alt=""
-        className="relative h-full w-full object-contain drop-shadow-2xl"
+        className="relative h-full w-full object-contain drop-shadow-xl"
         style={solution.heroGifScale ? { transform: `scale(${solution.heroGifScale})` } : undefined}
       />
     </div>
@@ -45,7 +45,7 @@ export default function FundingSolutionPageTemplate({ solution }: FundingSolutio
         eyebrow={solution.name}
         title={solution.heroTitle}
         description={solution.heroDescription}
-        visual={visual}
+        image={solution.image}
       >
         <div className="flex w-full flex-row gap-2.5 sm:w-auto sm:gap-3">
           <CheckEligibilityButton
@@ -86,11 +86,14 @@ export default function FundingSolutionPageTemplate({ solution }: FundingSolutio
 
       <section className="py-20 sm:py-28">
         <div className="container-page flex flex-col gap-12">
-          <SectionHeading
-            eyebrow="How It Works"
-            title={solution.introTitle}
-            description={solution.introDescription}
-          />
+          <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+            <SectionHeading
+              eyebrow="How It Works"
+              title={solution.introTitle}
+              description={solution.introDescription}
+            />
+            {gifVisual}
+          </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {solution.benefits.map((benefit) => (

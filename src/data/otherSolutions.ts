@@ -1,4 +1,10 @@
 import type { LucideIcon } from "lucide-react";
+import type { StaticImageData } from "next/image";
+import businessBankAccountsImage from "@/assets/BusinessBankAccounts.jpg";
+import merchantServicesImage from "@/assets/MerchantServices.jpg";
+import businessCreditCardsImage from "@/assets/BusinessCreditCards.jpg";
+import bridgingLoansImage from "@/assets/BridgingLoans.jpg";
+import machineryVehicleFinanceImage from "@/assets/Machinery&VehicleFinance.jpg";
 import {
   Landmark,
   ShoppingCart,
@@ -52,6 +58,7 @@ export type OtherSolution = {
   // --- detail page: hero section ---
   heroTitle: string;
   heroDescription: string;
+  image: StaticImageData;
 
   // --- detail page: intro section ---
   introTitle: string;
@@ -74,6 +81,7 @@ export const otherSolutions: OtherSolution[] = [
     name: "Business Bank Accounts",
     icon: Landmark,
     tagline: "Find the perfect bank account for your business needs",
+    image: businessBankAccountsImage,
     heroTitle: "Let's connect your business to the right bank",
     heroDescription:
       "Every business banks differently. We compare business current accounts across the market so you can find one that's actually built around how your business needs to operate.",
@@ -117,6 +125,7 @@ export const otherSolutions: OtherSolution[] = [
     name: "Merchant Services",
     icon: ShoppingCart,
     tagline: "Accept payments securely in person, online, or by phone",
+    image: merchantServicesImage,
     heroTitle: "Accept payments securely from customers anywhere",
     heroDescription:
       "A suite of merchant services that lets your business accept card payments in person, online or over the phone — with better cash flow, easier reconciliation and secure, fast transactions.",
@@ -158,6 +167,7 @@ export const otherSolutions: OtherSolution[] = [
     name: "Business Credit Cards",
     icon: CreditCard,
     tagline: "Corporate credit cards for expense and cash flow management",
+    image: businessCreditCardsImage,
     heroTitle: "Flexible credit solutions for business expenses",
     heroDescription:
       "Business credit cards — also known as corporate credit cards — make it easy to access additional funds when you need them, control cash flow, track expenses and spread costs.",
@@ -199,6 +209,7 @@ export const otherSolutions: OtherSolution[] = [
     name: "Bridging Loans",
     icon: Layers,
     tagline: "Short-term finance to bridge financial gaps",
+    image: bridgingLoansImage,
     heroTitle: "Bridge financial gaps with short-term credit",
     heroDescription:
       "Short-term business credit that bridges the gap between two financial events — commonly used by property owners and business investors to cover a deficit while longer-term finance is arranged.",
@@ -241,6 +252,7 @@ export const otherSolutions: OtherSolution[] = [
     name: "Machinery & Vehicle Finance",
     icon: Cog,
     tagline: "Lease equipment and vehicles without capital outlay",
+    image: machineryVehicleFinanceImage,
     heroTitle: "Acquire assets without the capital outlay",
     heroDescription:
       "Financing options that let you invest in the machinery and vehicles your business needs, without a large upfront cost or draining your working capital.",

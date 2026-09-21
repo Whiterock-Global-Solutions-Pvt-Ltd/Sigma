@@ -1,4 +1,16 @@
 import type { LucideIcon } from "lucide-react";
+import type { StaticImageData } from "next/image";
+import businessLoansImage from "@/assets/ServiceSectors-Finance.jpg";
+import invoiceFinanceImage from "@/assets/Transport&Logistics-Finance.jpg";
+import assetFinanceImage from "@/assets/Manufacturing&Engineering-Finance.jpg";
+import merchantCashAdvanceImage from "@/assets/Retail-Finance.jpg";
+import businessCashAdvanceImage from "@/assets/Garage&Car-Sales-Finance.jpg";
+import commercialPropertyFinanceImage from "@/assets/Construction-Finance.jpg";
+import propertyFinanceImage from "@/assets/Construction-Finance.jpg";
+import growthGuaranteeSchemeImage from "@/assets/Technology&Media-Finance.jpg";
+import recoveryLoanSchemeImage from "@/assets/Hospitality-Finance.jpg";
+import revolvingCreditFacilityImage from "@/assets/Energy-Finance.jpg";
+import refinanceImage from "@/assets/Wholesale-Finance.jpg";
 import {
   Banknote,
   FileStack,
@@ -47,6 +59,7 @@ export type Solution = {
   // --- detail page: hero section ---
   heroTitle: string;
   heroDescription: string;
+  image: StaticImageData;
   heroGif?: string;
   heroGifScale?: number;
 
@@ -83,6 +96,7 @@ export const solutions: Solution[] = [
     heroTitle: "Business finance that fits how you actually trade",
     heroDescription:
       "Unsecured and secured business loans from £10k to £2m, structured around your cash flow — decisions in as little as 24 hours.",
+    image: businessLoansImage,
     heroGif: "/gifs/business-loans.gif?v=5",
     introTitle: "Getting the right business loan made simple",
     introDescription:
@@ -137,6 +151,7 @@ export const solutions: Solution[] = [
     heroTitle: "Turn unpaid invoices into working capital today",
     heroDescription:
       "Release up to 90% of the value of your outstanding invoices immediately, instead of waiting 30, 60 or 90 days to get paid.",
+    image: invoiceFinanceImage,
     heroGif: "/gifs/invoice-finance.gif?v=5",
     introTitle: "How invoice finance works",
     introDescription:
@@ -187,6 +202,7 @@ export const solutions: Solution[] = [
     heroTitle: "Fund equipment without draining your reserves",
     heroDescription:
       "Spread the cost of vehicles, machinery and technology over time — preserving working capital for everything else.",
+    image: assetFinanceImage,
     heroGif: "/gifs/asset-finance.gif?v=5",
     introTitle: "How asset finance works",
     introDescription:
@@ -237,6 +253,7 @@ export const solutions: Solution[] = [
     heroTitle: "Funding that flexes with your card revenue",
     heroDescription:
       "An advance against future card sales, repaid as a small percentage of turnover — with no fixed monthly repayment to worry about.",
+    image: merchantCashAdvanceImage,
     heroGif: "/gifs/merchant-cash-advance.gif?v=5",
     introTitle: "How a merchant cash advance works",
     introDescription:
@@ -286,6 +303,7 @@ export const solutions: Solution[] = [
     heroTitle: "Revenue-based funding that flexes with your turnover",
     heroDescription:
       "A lump sum advance repaid through small, regular payments linked to your overall business revenue — not just card sales.",
+    image: businessCashAdvanceImage,
     heroGif: "/gifs/business-cash-advance.gif?v=5",
     introTitle: "How a business cash advance works",
     introDescription:
@@ -335,6 +353,7 @@ export const solutions: Solution[] = [
     heroTitle: "Purchase, refinance or release equity from property",
     heroDescription:
       "Competitive commercial mortgages for businesses buying, refinancing or releasing capital from the property they trade from.",
+    image: commercialPropertyFinanceImage,
     heroGif: "/gifs/commercial-property-finance.gif?v=5",
     introTitle: "How commercial property finance works",
     introDescription:
@@ -384,6 +403,7 @@ export const solutions: Solution[] = [
     heroTitle: "Development finance for property professionals",
     heroDescription:
       "Bridging, development and portfolio finance for property investors and developers — from single refurbishments to ground-up builds.",
+    image: propertyFinanceImage,
     heroGif: "/gifs/property-finance.gif?v=5",
     heroGifScale: 1.4,
     introTitle: "How property finance works",
@@ -434,6 +454,7 @@ export const solutions: Solution[] = [
     heroTitle: "Government-backed lending to fuel your growth",
     heroDescription:
       "Access the UK Growth Guarantee Scheme to borrow for growth — backed by a government guarantee.",
+    image: growthGuaranteeSchemeImage,
     heroGif: "/gifs/growth-guarantee-scheme.gif?v=5",
     introTitle: "How the Growth Guarantee Scheme works",
     introDescription:
@@ -483,6 +504,7 @@ export const solutions: Solution[] = [
     heroTitle: "Government-backed support to rebuild and grow",
     heroDescription:
       "Lending to help businesses navigating disruption stabilise cash flow, restructure and rebuild — backed by a government guarantee.",
+    image: recoveryLoanSchemeImage,
     heroGif: "/gifs/recovery-loan-scheme.gif?v=5",
     introTitle: "How the Recovery Loan Scheme works",
     introDescription:
@@ -532,6 +554,7 @@ export const solutions: Solution[] = [
     heroTitle: "On-demand credit that flexes with your needs",
     heroDescription:
       "A flexible credit limit you can draw down, repay and reuse whenever your business needs it.",
+    image: revolvingCreditFacilityImage,
     heroGif: "/gifs/revolving-credit-facility.gif?v=5",
     introTitle: "How a revolving credit facility works",
     introDescription:
@@ -581,6 +604,7 @@ export const solutions: Solution[] = [
     heroTitle: "Release equity and simplify your repayments",
     heroDescription:
       "Refinance existing debt or assets to release equity, lower your rate, or combine multiple repayments into one manageable facility.",
+    image: refinanceImage,
     heroGif: "/gifs/refinance.gif?v=5",
     introTitle: "How refinancing and consolidation work",
     introDescription:

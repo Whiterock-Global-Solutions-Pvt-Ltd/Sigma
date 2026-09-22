@@ -112,10 +112,10 @@ export default function CookiePolicyPage() {
               </a>{" "}
               or{" "}
               <a
-                href="mailto:hello@sigmabusinessfinance.co.uk"
+                href="mailto:contact@sigmabusinessfinance.co.uk"
                 className="text-primary-700 hover:underline"
               >
-                hello@sigmabusinessfinance.co.uk
+                contact@sigmabusinessfinance.co.uk
               </a>
               .
             </p>

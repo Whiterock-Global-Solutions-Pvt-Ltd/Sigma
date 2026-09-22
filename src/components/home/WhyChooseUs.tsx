@@ -13,7 +13,7 @@ const reasons = [
     icon: ScaleIcon,
     title: "Whole-of-market comparison",
     description:
-      "We're not tied to one lender — we compare 60+ specialist funders to find your best rate.",
+      "We're not tied to one lender — we compare 50+ specialist funders to find your best rate.",
   },
   {
     icon: MousePointerClick,

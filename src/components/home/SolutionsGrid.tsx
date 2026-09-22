@@ -36,10 +36,7 @@ export default function SolutionsGrid() {
                   {solution.tagline}
                 </p>
               </div>
-              <div className="mt-auto flex items-center justify-between border-t border-neutral-200 pt-4 text-sm">
-                <span className="font-semibold text-primary-800">
-                  {solution.range}
-                </span>
+              <div className="mt-auto flex items-center justify-end border-t border-neutral-200 pt-4 text-sm">
                 <span className="flex items-center gap-1 font-medium text-secondary-600 opacity-0 transition-opacity group-hover:opacity-100">
                   Learn more
                   <ArrowRight className="h-3.5 w-3.5" />

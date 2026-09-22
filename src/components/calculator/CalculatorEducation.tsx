@@ -214,8 +214,10 @@ export default function CalculatorEducation() {
             <div className="border-t border-white/10 pt-8 text-center">
               <p className="text-xs text-neutral-500">
                 Sigma Business Finance Ltd is a credit broker, not a lender,
-                and works with a panel of lenders. Registered in England &amp;
-                Wales.
+                and works with a panel of lenders. Sigma Business Finance
+                Ltd is not authorised by the Financial Conduct Authority and
+                can only complete non-regulated introductions. Registered in
+                England &amp; Wales.
               </p>
             </div>
           </div>

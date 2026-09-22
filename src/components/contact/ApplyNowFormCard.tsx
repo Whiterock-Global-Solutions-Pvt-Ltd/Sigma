@@ -14,7 +14,7 @@ import CheckEligibilityButton from "@/components/eligibility/CheckEligibilityBut
 
 const benefits = [
   "Decisions in as little as 24–48 hours",
-  "Whole-of-market panel of 60+ lenders",
+  "Whole-of-market panel of 50+ lenders",
   "No upfront fees",
   "Dedicated account manager",
 ];

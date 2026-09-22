@@ -19,7 +19,6 @@ type FundingSolutionPageTemplateProps = {
 
 export default function FundingSolutionPageTemplate({ solution }: FundingSolutionPageTemplateProps) {
   const facts = [
-    { label: "Facility size", value: solution.range },
     { label: "Term", value: solution.term },
     { label: "Decision", value: solution.decision },
   ];

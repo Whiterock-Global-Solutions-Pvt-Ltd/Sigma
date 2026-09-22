@@ -1,7 +1,7 @@
 const stats = [
-  { value: "£250M+", label: "Funding facilitated" },
-  { value: "6,000+", label: "UK businesses helped" },
-  { value: "60+", label: "Specialist lenders" },
+  { value: "£200M+", label: "Funding facilitated" },
+  { value: "5,000+", label: "UK businesses helped" },
+  { value: "50+", label: "Specialist lenders" },
   { value: "24–48h", label: "Typical decision time" },
   { value: "6.9%", label: "Rates from" },
 ];

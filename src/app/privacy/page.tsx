@@ -21,7 +21,7 @@ export default function PrivacyPage() {
           body: (
             <p>
               Sigma Business Finance Ltd (company number 15732726, registered
-              office 53a Newferry Road, Newferry, CH62 1AB) is the data
+              office Commerce Park, Campbeltown Road, Birkenhead, CH41 9HP) is the data
               controller for the personal information described in this
               policy. Our ICO registration number is{" "}
               <span className="font-medium text-neutral-900">
@@ -205,10 +205,10 @@ export default function PrivacyPage() {
               </a>{" "}
               or{" "}
               <a
-                href="mailto:hello@sigmabusinessfinance.co.uk"
+                href="mailto:contact@sigmabusinessfinance.co.uk"
                 className="text-primary-700 hover:underline"
               >
-                hello@sigmabusinessfinance.co.uk
+                contact@sigmabusinessfinance.co.uk
               </a>
               .
             </p>

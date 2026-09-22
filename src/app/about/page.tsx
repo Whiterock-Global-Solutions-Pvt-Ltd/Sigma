@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Compass, HeartHandshake, ShieldCheck, Target } from "lucide-react";
+import { HeartHandshake, ShieldCheck, Target, Zap } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import StatsBar from "@/components/home/StatsBar";
@@ -14,27 +14,27 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: ShieldCheck,
-    title: "Transparent, always",
+    title: "Radical transparency",
     description:
       "Clear rates, clear terms, no hidden fees. If a product isn't right for you, we'll say so.",
   },
   {
-    icon: Target,
-    title: "Matched, not mass-marketed",
+    icon: Zap,
+    title: "Speed",
     description:
-      "Every recommendation is based on your numbers and goals — not whichever lender pays the most commission.",
+      "Most applications get a decision within 24–48 hours — we don't believe good funding has to mean a slow process.",
+  },
+  {
+    icon: Target,
+    title: "Solutions-focused",
+    description:
+      "Every recommendation is matched to your numbers and goals — not whichever lender pays the most commission.",
   },
   {
     icon: HeartHandshake,
-    title: "On your side",
+    title: "Success-based incentives",
     description:
-      "We work for you, not the lender. Our job is to get you the best outcome, not just any outcome.",
-  },
-  {
-    icon: Compass,
-    title: "Straightforward, start to finish",
-    description:
-      "One dedicated account manager, plain-English guidance, and a process built to move quickly.",
+      "We're paid by our lending partners when your funding completes, so our incentive is the same as yours — getting you funded.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
               bank&apos;s narrow criteria or navigating dozens of lenders alone.
             </p>
             <p className="text-base leading-relaxed text-neutral-600">
-              Today, we work with a panel of 60+ specialist lenders across
+              Today, we work with a panel of 50+ specialist lenders across
               every major finance product — from short-term working capital to
               multi-million pound commercial property deals — so business
               owners get one straightforward point of contact and a genuinely
@@ -69,6 +69,12 @@ export default function AboutPage() {
               product over another. Our only job is to find the facility that
               actually fits your business.
             </p>
+
+            <blockquote className="rounded-2xl border-l-4 border-secondary-500 bg-secondary-50 p-5 text-sm leading-relaxed text-neutral-700">
+              According to the NACFB Industry Report (2024), 32% of UK SMEs
+              successfully funded through commercial finance brokers had
+              previously been declined funding elsewhere.
+            </blockquote>
           </div>
 
           <div className="grid grid-cols-2 gap-6">

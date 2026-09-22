@@ -42,7 +42,7 @@ export default function Hero() {
 
           <p className="max-w-xl text-lg leading-relaxed text-primary-100">
             Sigma Business Finance matches you with the right lender from a
-            panel of <strong className="text-white">60+ specialist funders</strong> —
+            panel of <strong className="text-white">50+ specialist funders</strong> —
             with decisions in as little as 24–48 hours, and absolutely no
             upfront fees.
           </p>

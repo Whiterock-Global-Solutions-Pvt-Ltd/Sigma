@@ -15,11 +15,11 @@ const details = [
   {
     icon: Mail,
     label: "Email us",
-    value: "hello@sigmabusinessfinance.co.uk",
-    href: "mailto:hello@sigmabusinessfinance.co.uk",
+    value: "contact@sigmabusinessfinance.co.uk",
+    href: "mailto:contact@sigmabusinessfinance.co.uk",
   },
-  { icon: MapPin, label: "Visit us", value: "128 Sigma House, London, EC2A 4BX" },
-  { icon: Clock, label: "Opening hours", value: "Mon – Fri, 9:00am – 6:00pm" },
+  { icon: MapPin, label: "Visit us", value: "Commerce Park, Campbeltown Road, Birkenhead, CH41 9HP" },
+  { icon: Clock, label: "Opening hours", value: "Mon – Fri, 9:00am – 5:00pm" },
 ];
 
 export default function ContactPage() {

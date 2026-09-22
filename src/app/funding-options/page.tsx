@@ -18,7 +18,7 @@ export default function FundingOptionsPage() {
       <PageHero
         eyebrow="Funding Options"
         title="A finance solution for every stage of business"
-        description="We work across a panel of 60+ specialist lenders to match you with the right product — not just the first one available."
+        description="We work across a panel of 50+ specialist lenders to match you with the right product — not just the first one available."
         visual={
           <div className="relative flex h-72 w-72 items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96 lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem]">
             <div
@@ -74,12 +74,6 @@ export default function FundingOptionsPage() {
               </div>
 
               <div className="flex flex-col gap-4 lg:min-w-[220px] lg:border-l lg:border-neutral-200 lg:pl-8">
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">
-                    Facility size
-                  </p>
-                  <p className="text-lg font-bold text-neutral-900">{solution.range}</p>
-                </div>
                 <div>
                   <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">
                     Term

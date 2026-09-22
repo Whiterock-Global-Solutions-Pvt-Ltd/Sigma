@@ -28,7 +28,7 @@ const steps = [
     icon: FileSearch,
     title: "Application",
     description:
-      "Your dedicated account manager searches our panel of 60+ lenders and handles the paperwork for you.",
+      "Your dedicated account manager searches our panel of 50+ lenders and handles the paperwork for you.",
   },
   {
     icon: HandCoins,

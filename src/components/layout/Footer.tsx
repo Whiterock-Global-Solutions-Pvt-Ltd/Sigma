@@ -21,7 +21,7 @@ export default function Footer() {
           <Logo variant="dark" />
           <p className="max-w-sm text-sm leading-relaxed text-neutral-400">
             Sigma Business Finance is a UK commercial finance broker, connecting
-            ambitious businesses with the right funding from a panel of 60+
+            ambitious businesses with the right funding from a panel of 50+
             specialist lenders — with no upfront fees.
           </p>
           <div className="flex items-center gap-3 pt-2">
@@ -88,13 +88,13 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-secondary-400" />
-              <a href="mailto:hello@sigmabusinessfinance.co.uk" className="hover:text-white">
-                hello@sigmabusinessfinance.co.uk
+              <a href="mailto:contact@sigmabusinessfinance.co.uk" className="hover:text-white">
+                contact@sigmabusinessfinance.co.uk
               </a>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-secondary-400" />
-              <span>128 Sigma House, London, EC2A 4BX</span>
+              <span>Commerce Park, Campbeltown Road, Birkenhead, CH41 9HP</span>
             </li>
           </ul>
         </div>
@@ -109,8 +109,10 @@ export default function Footer() {
             </p>
             <p className="min-w-0 flex-1 leading-relaxed">
               Sigma Business Finance is a credit broker, not a lender, and works
-              with a panel of lenders. We may receive a commission from our
-              lending partners. Registered in England &amp; Wales.
+              with a panel of lenders. Sigma Business Finance Ltd is not
+              authorised by the Financial Conduct Authority and can only
+              complete non-regulated introductions. We will receive
+              commission from lenders. Registered in England &amp; Wales.
             </p>
             <div className="flex shrink-0 gap-4">
               <Link href="/privacy" className="whitespace-nowrap hover:text-neutral-300">

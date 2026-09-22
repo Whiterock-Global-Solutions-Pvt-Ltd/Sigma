@@ -7,7 +7,7 @@ export const faqs: Faq[] = [
   {
     question: "What does Sigma Business Finance actually do?",
     answer:
-      "We're a UK business finance broker. Rather than being tied to one bank, we search a panel of 60+ specialist lenders on your behalf to find the funding that best fits your business, then manage the application for you from start to finish — at no cost to you.",
+      "We're a UK business finance broker. Rather than being tied to one bank, we search a panel of 50+ specialist lenders on your behalf to find the funding that best fits your business, then manage the application for you from start to finish — at no cost to you.",
   },
   {
     question: "Will checking my eligibility affect my credit score?",

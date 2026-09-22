@@ -1,7 +1,6 @@
 import { solutions } from "@/data/solutions";
 import { industries } from "@/data/industries";
 import { faqs } from "@/data/faqs";
-import { testimonials } from "@/data/testimonials";
 
 export type SearchResult = {
   href: string;
@@ -23,7 +22,7 @@ const pageResults: SearchResult[] = [
     keywords: [
       "home sigma business finance homepage",
       "you built the business we'll help you fund it",
-      "sigma business finance matches you with the right lender from a panel of 60+ specialist funders decisions 24-48 hours no upfront fees",
+      "sigma business finance matches you with the right lender from a panel of 50+ specialist funders decisions 24-48 hours no upfront fees",
       "trusted uk business finance broker",
       "no impact on credit score whole-of-market panel dedicated account manager",
       "check your eligibility explore solutions",
@@ -33,10 +32,9 @@ const pageResults: SearchResult[] = [
       "why sigma business finance without the finance fuss whole-of-market comparison effortless application fast flexible decisions tailored to your business one dedicated contact no upfront fees",
       "repayment calculator estimate your monthly repayments loan calculator funding amount repayment term est monthly total repayable total interest illustrative representative rate apr",
       "specialist funding whatever sector you're in industries we've placed finance for businesses across almost every industry",
-      "client stories trusted by businesses across the uk testimonials reviews",
       "common questions answered faq",
       "find the funding built for your business speak to a funding specialist check eligibility no cost no obligation",
-      "£250m+ funding facilitated 6000+ uk businesses helped 60+ specialist lenders 24-48h typical decision time 6.9% rates from",
+      "£200m+ funding facilitated 5000+ uk businesses helped 50+ specialist lenders 24-48h typical decision time 6.9% rates from",
     ].join(" "),
   },
   {
@@ -49,12 +47,13 @@ const pageResults: SearchResult[] = [
       "we started sigma business finance because too many good businesses were being turned away by their bank or drowning in paperwork just to get a straight answer we built the alternative",
       "our story a broker built around the borrower",
       "sigma business finance was founded to close the gap between ambitious uk businesses and the funding they need to grow too often business owners were stuck choosing between a single bank's narrow criteria or navigating dozens of lenders alone",
-      "today we work with a panel of 60+ specialist lenders across every major finance product from short-term working capital to multi-million pound commercial property deals so business owners get one straightforward point of contact and a genuinely whole-of-market comparison",
+      "today we work with a panel of 50+ specialist lenders across every major finance product from short-term working capital to multi-million pound commercial property deals so business owners get one straightforward point of contact and a genuinely whole-of-market comparison",
       "we're not a lender we don't profit from pushing one product over another our only job is to find the facility that actually fits your business",
-      "transparent always clear rates clear terms no hidden fees",
-      "matched not mass-marketed every recommendation is based on your numbers and goals not whichever lender pays the most commission",
-      "on your side we work for you not the lender our job is to get you the best outcome",
-      "straightforward start to finish one dedicated account manager plain-english guidance",
+      "radical transparency clear rates clear terms no hidden fees",
+      "speed most applications get a decision within 24-48 hours",
+      "solutions-focused every recommendation is matched to your numbers and goals not whichever lender pays the most commission",
+      "success-based incentives we're paid by our lending partners when your funding completes",
+      "nacfb industry report 2024 32% of uk smes successfully funded through commercial finance brokers had previously been declined funding elsewhere",
       "our commitment regulated responsible and on your side sigma business finance operates as a credit broker not a lender we're paid by our lending partners so our service to you is completely free",
     ].join(" "),
   },
@@ -74,9 +73,9 @@ const pageResults: SearchResult[] = [
       "apply online in minutes or send us a message and a funding specialist will be in touch within one working day",
       "send a message prefer to just ask a question fill in the form below and our team will get back to you directly",
       "call us 0151 837 3528",
-      "email us hello@sigmabusinessfinance.co.uk",
-      "visit us 128 sigma house london ec2a 4bx",
-      "opening hours monday friday 9am 6pm",
+      "email us contact@sigmabusinessfinance.co.uk",
+      "visit us commerce park campbeltown road birkenhead ch41 9hp",
+      "opening hours monday friday 9am 5pm",
     ].join(" "),
   },
   {
@@ -113,14 +112,17 @@ const pageResults: SearchResult[] = [
       "real impact every deal you work on directly helps a uk business grow",
       "a supportive culture collaborative straight-talking teams who back each other not a call-centre script in sight",
       "ongoing training structured onboarding and continuous learning in commercial finance funded by us",
-      "current openings don't see the right role listed we're always keen to hear from great people send us your cv careers@sigmabusinessfinance.co.uk",
+      "open roles at sigma business development manager senior account manager operations coordinator london hybrid full-time",
+      "benefits base salary uncapped commission 25 days holiday plus bank holidays private healthcare quarterly performance bonuses early friday finish team social events",
+      "how we hire from application to offer in four steps online application 20-minute call manager interview offer",
+      "don't see your role we're always keen to hear from great people send us your cv careers@sigmabusinessfinance.co.uk",
     ].join(" "),
   },
   {
     href: "/funding-options",
     title: "Funding Options",
     category: "Page",
-    keywords: "finance products loans a finance solution for every stage of business we work across a panel of 60+ specialist lenders to match you with the right product",
+    keywords: "finance products loans a finance solution for every stage of business we work across a panel of 50+ specialist lenders to match you with the right product",
   },
 ];
 
@@ -131,7 +133,6 @@ const solutionResults: SearchResult[] = solutions.map((solution) => ({
   keywords: [
     solution.tagline,
     solution.summary,
-    solution.range,
     solution.term,
     solution.decision,
     ...solution.bullets,
@@ -163,19 +164,11 @@ const faqResults: SearchResult[] = faqs.map((faq) => ({
   keywords: faq.answer,
 }));
 
-const testimonialResults: SearchResult[] = testimonials.map((testimonial) => ({
-  href: "/#testimonials",
-  title: `${testimonial.name} — Client Story`,
-  category: "Client Story",
-  keywords: [testimonial.role, testimonial.quote, testimonial.amount, testimonial.timeframe].join(" "),
-}));
-
 export const searchIndex: SearchResult[] = [
   ...pageResults,
   ...solutionResults,
   ...industryResults,
   ...faqResults,
-  ...testimonialResults,
 ];
 
 /** Levenshtein edit distance — small, dependency-free typo tolerance. */

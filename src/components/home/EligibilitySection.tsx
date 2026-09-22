@@ -16,7 +16,7 @@ const points = [
   {
     icon: SearchCheck,
     title: "Whole-of-market search",
-    description: "We instantly compare offers from 60+ specialist lenders.",
+    description: "We instantly compare offers from 50+ specialist lenders.",
   },
 ];
 

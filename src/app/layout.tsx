@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Sigma Business Finance",
   },
   description:
-    "Sigma Business Finance connects UK businesses with 60+ specialist lenders. Business loans, invoice finance, asset finance and more — decisions in 24–48 hours, no upfront fees.",
+    "Sigma Business Finance connects UK businesses with 50+ specialist lenders. Business loans, invoice finance, asset finance and more — decisions in 24–48 hours, no upfront fees.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

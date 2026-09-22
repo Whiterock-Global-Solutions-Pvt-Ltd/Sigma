@@ -24,7 +24,7 @@ export default function TermsPage() {
               (&ldquo;Sigma&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo; or
               &ldquo;our&rdquo;), a company registered in England &amp; Wales
               under company number 15732726, with its registered office at
-              53a Newferry Road, Newferry, CH62 1AB. These terms apply
+              Commerce Park, Campbeltown Road, Birkenhead, CH41 9HP. These terms apply
               whenever you browse this website or ask us to help you find
               business funding.
             </p>
@@ -46,14 +46,24 @@ export default function TermsPage() {
           body: (
             <>
               <p>
-                Sigma Business Finance is a credit broker, not a lender. We
-                work with a panel of specialist lenders and, where
-                appropriate, introduce you to a lender or another broker who
-                we reasonably believe can help with your funding
-                requirements. We do not charge you a fee for this
-                introduction service, but we may receive a commission or
-                other payment from the lender or partner you are introduced
-                to.
+                Sigma Business Finance is a credit broker, not a lender.
+                Sigma Business Finance Ltd is not authorised by the
+                Financial Conduct Authority and can only complete
+                non-regulated introductions. We work with a panel of
+                specialist lenders and, where appropriate, introduce you to
+                a lender or another broker who we reasonably believe can
+                help with your funding requirements. We do not charge you a
+                fee for this introduction service.
+              </p>
+              <p>
+                We will receive commission from lenders. Different lenders
+                pay different amounts depending on different commission
+                models. For transparency, we work with the following
+                commission models: fixed fee, fixed rate of commission,
+                percentage of the amount you borrow, and rate for risk,
+                which is based on the risk profile of the business. Further
+                details of the commission model, calculation, and amount
+                will be disclosed throughout the customer journey.
               </p>
               <p>
                 Any funding you take out is a separate agreement between you
@@ -172,10 +182,10 @@ export default function TermsPage() {
               </a>{" "}
               or{" "}
               <a
-                href="mailto:hello@sigmabusinessfinance.co.uk"
+                href="mailto:contact@sigmabusinessfinance.co.uk"
                 className="text-primary-700 hover:underline"
               >
-                hello@sigmabusinessfinance.co.uk
+                contact@sigmabusinessfinance.co.uk
               </a>
               . See also our{" "}
               <Link href="/privacy" className="text-primary-700 hover:underline">

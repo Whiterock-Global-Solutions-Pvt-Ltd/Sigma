@@ -91,7 +91,7 @@ function InfoPanel() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-2.5 text-center backdrop-blur-md">
-          <div className="text-xl font-bold text-secondary-400">60+</div>
+          <div className="text-xl font-bold text-secondary-400">50+</div>
           <div className="text-xs uppercase tracking-wide text-primary-300">
             Specialist lenders
           </div>

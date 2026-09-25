@@ -47,9 +47,7 @@ export default function TermsPage() {
             <>
               <p>
                 Sigma Business Finance is a credit broker, not a lender.
-                Sigma Business Finance Ltd is not authorised by the
-                Financial Conduct Authority and can only complete
-                non-regulated introductions. We work with a panel of
+                We work with a panel of
                 specialist lenders and, where appropriate, introduce you to
                 a lender or another broker who we reasonably believe can
                 help with your funding requirements. We do not charge you a

@@ -58,6 +58,17 @@ const pageResults: SearchResult[] = [
     ].join(" "),
   },
   {
+    href: "/check-eligibility",
+    title: "Check Eligibility",
+    category: "Page",
+    keywords: [
+      "check your funding eligibility eligible qualify how much could i borrow",
+      "no credit check no credit score impact no obligation instant estimate 60 seconds",
+      "companies house company search funding readiness score likely approval range",
+      "recommended funding product business loans revolving credit merchant cash advance",
+    ].join(" "),
+  },
+  {
     href: "/contact#eligibility",
     title: "Apply Now",
     category: "Page",

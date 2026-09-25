@@ -109,9 +109,7 @@ export default function Footer() {
             </p>
             <p className="min-w-0 flex-1 leading-relaxed">
               Sigma Business Finance is a credit broker, not a lender, and works
-              with a panel of lenders. Sigma Business Finance Ltd is not
-              authorised by the Financial Conduct Authority and can only
-              complete non-regulated introductions. We will receive
+              with a panel of lenders. We will receive
               commission from lenders. Registered in England &amp; Wales.
             </p>
             <div className="flex shrink-0 gap-4">

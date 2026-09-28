@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
-import {
-  Award,
-  CheckCircle2,
-  Coins,
-  HeartHandshake,
-  Palette,
-  Rocket,
-  TrendingUp,
-  Unlock,
-  Users,
-  Zap,
-} from "lucide-react";
+import { CheckCircle2, Palette, Users } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Button from "@/components/ui/Button";
 import PartnerForm from "@/components/partner/PartnerForm";
+import PartnerBenefits from "@/components/partner/PartnerBenefits";
 
 export const metadata: Metadata = pageMetadata({
   title: "Partner With Us",
@@ -28,44 +17,6 @@ const heroBenefits = [
   "Increase sales conversion rates",
   "Bespoke solutions for every client",
   "Rewarding referral incentives",
-];
-
-const benefits = [
-  {
-    icon: Unlock,
-    title: "Remove budget barriers",
-    description: "Help clients say yes to bigger decisions without cash flow getting in the way.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Secure larger sales",
-    description: "Give clients the option to spread the cost, so budget stops being the objection.",
-  },
-  {
-    icon: Zap,
-    title: "Accelerate cash flow",
-    description: "Get paid in full up front while your client repays over time through our lenders.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Strengthen customer loyalty",
-    description: "Offering finance adds real value to the relationship, not just the transaction.",
-  },
-  {
-    icon: Coins,
-    title: "Generate additional revenue",
-    description: "Earn a referral incentive on every client you introduce who goes on to be funded.",
-  },
-  {
-    icon: Award,
-    title: "Stay ahead of competitors",
-    description: "Give clients a reason to choose you over competitors who can't offer finance.",
-  },
-  {
-    icon: Rocket,
-    title: "Fuel consistent growth",
-    description: "Build a steady, recurring revenue stream alongside your core business.",
-  },
 ];
 
 const steps = [
@@ -106,10 +57,18 @@ export default function PartnerPage() {
             </span>
           ))}
         </div>
-        <Button href="#apply" variant="secondary" size="lg" className="mt-4">
-          Become a Partner
-        </Button>
       </PageHero>
+
+      <section className="bg-neutral-50 py-20 sm:py-28" id="apply">
+        <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+          <SectionHeading
+            eyebrow="Become a Partner"
+            title="Ready to grow with Sigma?"
+            description="Fill in the form and a member of our partnerships team will be in touch within one working day to talk through how we can work together."
+          />
+          <PartnerForm />
+        </div>
+      </section>
 
       <section className="py-20 sm:py-28">
         <div className="container-page flex flex-col gap-12">
@@ -121,22 +80,7 @@ export default function PartnerPage() {
             className="mx-auto"
           />
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {benefits.map((benefit) => (
-              <div
-                key={benefit.title}
-                className="flex flex-col gap-4 rounded-2xl bg-neutral-50 p-6 ring-1 ring-neutral-200"
-              >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50 text-primary-700">
-                  <benefit.icon className="h-5 w-5" />
-                </span>
-                <h3 className="font-bold text-neutral-900">{benefit.title}</h3>
-                <p className="text-sm leading-relaxed text-neutral-600">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          <PartnerBenefits />
         </div>
       </section>
 
@@ -205,17 +149,6 @@ export default function PartnerPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-neutral-50 py-20 sm:py-28" id="apply">
-        <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
-          <SectionHeading
-            eyebrow="Become a Partner"
-            title="Ready to grow with Sigma?"
-            description="Fill in the form and a member of our partnerships team will be in touch within one working day to talk through how we can work together."
-          />
-          <PartnerForm />
         </div>
       </section>
     </>

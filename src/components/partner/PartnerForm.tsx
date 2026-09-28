@@ -39,11 +39,19 @@ export default function PartnerForm({ id }: { id?: string }) {
       onSubmit={handleSubmit}
       className="flex flex-col gap-5 rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm sm:p-8"
     >
-      <h3 className="text-lg font-bold text-neutral-900">Become a Partner</h3>
+      <div className="flex flex-col gap-1">
+        <h3 className="text-lg font-bold text-neutral-900">Become a Partner</h3>
+        <p className="text-xs text-neutral-500">
+          All fields marked <RequiredMark /> are required.
+        </p>
+      </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700">
-          First name
+          <span>
+            First name
+            <RequiredMark />
+          </span>
           <input
             required
             type="text"
@@ -52,7 +60,10 @@ export default function PartnerForm({ id }: { id?: string }) {
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700">
-          Last name
+          <span>
+            Last name
+            <RequiredMark />
+          </span>
           <input
             required
             type="text"
@@ -61,7 +72,10 @@ export default function PartnerForm({ id }: { id?: string }) {
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700">
-          Work email
+          <span>
+            Work email
+            <RequiredMark />
+          </span>
           <input
             required
             type="email"
@@ -70,7 +84,10 @@ export default function PartnerForm({ id }: { id?: string }) {
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700">
-          Phone number
+          <span>
+            Phone number
+            <RequiredMark />
+          </span>
           <input
             required
             type="tel"
@@ -79,7 +96,10 @@ export default function PartnerForm({ id }: { id?: string }) {
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700 sm:col-span-2">
-          Job title / position
+          <span>
+            Job title / position
+            <RequiredMark />
+          </span>
           <input
             required
             type="text"
@@ -90,7 +110,10 @@ export default function PartnerForm({ id }: { id?: string }) {
       </div>
 
       <label className="flex flex-col gap-1.5 text-sm font-medium text-neutral-700">
-        Tell us about your business
+        <span>
+          Tell us about your business
+          <RequiredMark />
+        </span>
         <textarea
           required
           rows={4}
@@ -121,5 +144,13 @@ export default function PartnerForm({ id }: { id?: string }) {
         Your data is protected by 256-bit encryption.
       </p>
     </form>
+  );
+}
+
+function RequiredMark() {
+  return (
+    <span className="ml-0.5 text-secondary-600" aria-hidden>
+      *
+    </span>
   );
 }

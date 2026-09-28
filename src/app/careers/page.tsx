@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Coffee, GraduationCap, Mail, Rocket, TrendingUp } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import StatsBar from "@/components/home/StatsBar";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Join Our Team",
   description:
     "Unlock your career potential with Sigma Business Finance. See why our team choose to build their career with us.",
-};
+  path: "/careers",
+});
 
 const perks = [
   {

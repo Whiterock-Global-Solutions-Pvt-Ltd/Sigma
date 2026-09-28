@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { HeartHandshake, ShieldCheck, Target, Zap } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import StatsBar from "@/components/home/StatsBar";
 import CTABanner from "@/components/home/CTABanner";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About Us",
   description:
     "Sigma Business Finance is a UK commercial finance broker built to make business funding fast, transparent and genuinely on your side.",
-};
+  path: "/about",
+});
 
 const values = [
   {

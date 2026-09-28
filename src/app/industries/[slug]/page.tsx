@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from "@/lib/seo";
 import SectorPageTemplate from "@/components/industries/SectorPageTemplate";
 import { industries, getIndustryBySlug } from "@/data/industries";
 
@@ -17,10 +19,11 @@ export async function generateMetadata(
     return {};
   }
 
-  return {
+  return pageMetadata({
     title: `${industry.name} Finance`,
     description: industry.heroDescription,
-  };
+    path: `/industries/${slug}`,
+  });
 }
 
 export default async function IndustryPage(props: PageProps<"/industries/[slug]">) {
@@ -31,5 +34,19 @@ export default async function IndustryPage(props: PageProps<"/industries/[slug]"
     notFound();
   }
 
-  return <SectorPageTemplate industry={industry} />;
+  const path = `/industries/${slug}`;
+  const title = `${industry.name} Finance`;
+
+  return (
+    <>
+      <SectorPageTemplate industry={industry} />
+      <JsonLd data={faqJsonLd(industry.faqs)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: title, path },
+        ])}
+      />
+    </>
+  );
 }

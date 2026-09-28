@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
@@ -6,11 +7,12 @@ import Button from "@/components/ui/Button";
 import CTABanner from "@/components/home/CTABanner";
 import { solutions } from "@/data/solutions";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Funding Options",
   description:
     "Explore Sigma Business Finance's full range of UK business funding solutions — business loans, invoice finance, asset finance, commercial property finance and more.",
-};
+  path: "/funding-options",
+});
 
 export default function FundingOptionsPage() {
   return (

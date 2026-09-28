@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import CheckEligibilityForm from "@/components/eligibility/CheckEligibilityForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Check Your Funding Eligibility",
   description:
     "See what your business could borrow in 60 seconds — no credit check, no obligation. Instant estimate and funding readiness score using live Companies House data.",
-};
+  path: "/check-eligibility",
+});
 
 export default function CheckEligibilityPage() {
   return (

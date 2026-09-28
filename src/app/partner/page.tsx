@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import {
   Award,
   CheckCircle2,
@@ -16,11 +17,12 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import PartnerForm from "@/components/partner/PartnerForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Partner With Us",
   description:
     "Join Sigma Business Finance's partner network and offer your clients industry-leading business finance — with rewarding referral incentives and dedicated support.",
-};
+  path: "/partner",
+});
 
 const heroBenefits = [
   "Increase sales conversion rates",

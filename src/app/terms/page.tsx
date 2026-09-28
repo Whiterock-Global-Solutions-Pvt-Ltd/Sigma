@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import LegalPageTemplate from "@/components/legal/LegalPageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Terms of Business",
   description:
     "The terms and conditions that apply when you use the Sigma Business Finance website or our credit broking services.",
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

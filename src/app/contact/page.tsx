@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ApplyNowFormCard from "@/components/contact/ApplyNowFormCard";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact Us",
   description:
     "Get in touch with Sigma Business Finance or check your funding eligibility online in 60 seconds — no credit check, no obligation.",
-};
+  path: "/contact",
+});
 
 const details = [
   { icon: Phone, label: "Call us", value: "0151 837 3528", href: "tel:01518373528" },

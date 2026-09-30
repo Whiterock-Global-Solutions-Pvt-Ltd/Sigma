@@ -137,7 +137,7 @@ export default function NavDropdown({
                     </p>
                   </div>
                   <Link
-                    href="/contact#eligibility"
+                    href="/check-eligibility"
                     onClick={() => setOpen(false)}
                     className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary-800 transition-colors hover:bg-primary-50"
                   >

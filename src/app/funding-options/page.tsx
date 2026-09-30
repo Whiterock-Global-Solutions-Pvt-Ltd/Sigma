@@ -88,7 +88,7 @@ export default function FundingOptionsPage() {
                   </p>
                   <p className="font-semibold text-neutral-800">{solution.decision}</p>
                 </div>
-                <Button href="/contact#eligibility" variant="secondary">
+                <Button href="/check-eligibility" variant="secondary">
                   Check Eligibility
                 </Button>
                 <Link
